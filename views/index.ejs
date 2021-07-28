@@ -15,11 +15,12 @@
 
     <title><%= title %></title>
 </head>
+
 <body>
 <!--==================== HEADER ====================-->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">Jamalludin</a>
+        <a href="#" class="nav__logo"><%= name %></a>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list grid">
@@ -50,12 +51,13 @@
                 </li>
                 <li class="nav__item">
                     <a href="#contact" class="nav__link">
-                        <i class="uil uil-message nav__icon"></i>Contactme
+                        <i class="uil uil-message nav__icon"></i>Contact Me
                     </a>
                 </li>
             </ul>
             <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+
         <div class="nav__btns">
             <!--Theme change button-->
             <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -108,9 +110,9 @@
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Hi, Saya Jamalludin</h1>
-                    <h3 class="home__subtitle">Backend Programmer</h3>
-                    <p class="home__description">Mempunyai Pengalaman 3 tahun sebagai backend programmer</p>
+                    <h1 class="home__title"><%= home_title %></h1>
+                    <h3 class="home__subtitle"><%= job_title %></h3>
+                    <p class="home__description"><%= introduce %></p>
                     <a href="#contact" class="button button--flex">
                         Contact Me <i class="uil uil-message"></i>
                     </a>
@@ -136,27 +138,27 @@
             <img src="/images/about.jpg" alt="" class="about__img">
 
             <div class="about__data">
-                <p class="about__description">Banck End Programmer, With JavaScript</p>
+                <p class="about__description"><%= about_description%></p>
 
                 <div class="about__info">
                     <div>
-                        <span class="about__info-title">08+</span>
+                        <span class="about__info-title">03+</span>
                         <span class="about__info-name">Years <br> Experience</span>
                     </div>
 
                     <div>
-                        <span class="about__info-title">20+</span>
+                        <span class="about__info-title">10+</span>
                         <span class="about__info-name">Complated <br> Project</span>
                     </div>
 
                     <div>
-                        <span class="about__info-title">05+</span>
+                        <span class="about__info-title">03+</span>
                         <span class="about__info-name">Complated <br> Worked</span>
                     </div>
                 </div>
 
                 <div class="about__button">
-                    <a download="" href="/pdf/Jamalludin-CV.pdf" class="button button--flex">
+                    <a download="" href="/pdf/CV-Jamalludin-2021.pdf" class="button button--flex">
                         Download CV<i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
@@ -172,13 +174,14 @@
         <div class="skill_container container grid">
             <div>
 
+                <!--==================== SKILLS Frontend Developer ====================-->
                 <div class="skills__content skills__open">
                     <div class="skills__header">
                         <i class="uil uil-brackets-curly skills__icon"></i>
 
                         <div>
                             <h1 class="skills__title">Frontend Developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <span class="skills__subtitle">More than 1 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -188,7 +191,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">HTML</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__html"></span>
@@ -198,7 +201,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__css"></span>
@@ -208,7 +211,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">JavaScript</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__js"></span>
@@ -218,7 +221,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">React</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__react"></span>
@@ -227,13 +230,14 @@
                     </div>
                 </div>
 
+                <!--==================== SKILLS Backend Developer ====================-->
                 <div class="skills__content skills__close">
                     <div class="skills__header">
                         <i class="uil uil-server-network skills__icon"></i>
 
                         <div>
                             <h1 class="skills__title">Backend Developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <span class="skills__subtitle">More than 3 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -243,7 +247,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">PHP</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__php"></span>
@@ -252,8 +256,8 @@
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">Node Js</h3>
-                                <span class="skills__number">90%</span>
+                                <h3 class="skills__name">Node.Js</h3>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__node"></span>
@@ -263,7 +267,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Java</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__java"></span>
@@ -273,7 +277,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Goolang</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__goolang"></span>
@@ -281,53 +285,34 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
+                <!--==================== SKILLS Mobile Developer ====================-->
                 <div class="skills__content skills__close">
                     <div class="skills__header">
-                        <i class="uil uil-swatchbook skills__icon"></i>
+                        <i class="uil uil-mobile-android skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Designer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <h1 class="skills__title">Mobile Developer</h1>
+                            <span class="skills__subtitle">More than 1 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
 
                     <div class="skills__list grid">
+                        <!--==================== SKILLS Mobile Developer 1 ====================-->
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">Figma</h3>
-                                <span class="skills__number">90%</span>
+                                <h3 class="skills__name">Android Developer</h3>
+                                <span class="skills__number"></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__figma"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Sketch</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__sketch"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Photoshop</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__photoshop"></span>
+                                <span class="skills__percentage skills__android"></span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -375,50 +360,15 @@
 
                         <div>
                             <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">Web Design</h3>
-                            <span class="qualification__subtitle">Spain - Institute</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2014-2017
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--==================== QUALIFICATION 3====================-->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Web Development</h3>
-                            <span class="qualification__subtitle">Yogyakarta - Ahmad Dahlan University</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2017-2019
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION 4====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
                             <!--<span class="qualification__line"></span>-->
                         </div>
 
                         <div>
-                            <h3 class="qualification__title">Master in UI / UX</h3>
-                            <span class="qualification__subtitle">Yogyakarta - Ahmad Dahlan University</span>
+                            <h3 class="qualification__title">MAN 1 Terbanggi Besar</h3>
+                            <span class="qualification__subtitle">Lampung - Terbanggi Besar</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
-                                2019-2021
+                                2011-2013
                             </div>
                         </div>
 
@@ -434,7 +384,7 @@
                             <span class="qualification__subtitle">PT. Pro Sistimatika Automasi</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
-                                2018-Presiden
+                                Dec 2018-Present
                             </div>
                         </div>
 
@@ -449,38 +399,21 @@
 
                         <div>
                             <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
+                            <!--<span class="qualification__line"></span>-->
                         </div>
 
                         <div>
                             <h3 class="qualification__title">Frontend Developer</h3>
-                            <span class="qualification__subtitle">Apple Inc - Indonesia</span>
+                            <span class="qualification__subtitle">PT. Uninet Techma Pilar</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
-                                2018-2020
+                                APR 2018- Dec 2018
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">UI Designer</h3>
-                            <span class="qualification__subtitle">Figma - Spain</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2017-2019
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <!--<span class="qualification__line"></span>-->
-                        </div>
                     </div>
 
                 </div>
-
             </div>
         </div>
     </section>
@@ -493,7 +426,7 @@
         <div class="services__container container grid">
             <div class="services__content">
                 <div>
-                    <i class="uil uil-web-grid"></i>
+                    <i class="uil uil-web-grid services__icon"></i>
                     <h3 class="services__title">Ui/Ux <br> Designer</h3>
                 </div>
 
@@ -575,8 +508,8 @@
 
             <div class="services__content">
                 <div>
-                    <i class="uil uil-pen services__icon"></i>
-                    <h3 class="services__title">Branding <br> Designer</h3>
+                    <i class="uil uil-server-network services__icon"></i>
+                    <h3 class="services__title">Backend <br> Developer</h3>
                 </div>
 
                 <span class="button button--flex button--small button--link services__button">
@@ -608,6 +541,122 @@
                             <li class="services__modal-service">
                                 <i class="uil uil-check-circle services__modal-icon"></i>
                                 <p>I Position your company brand</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== Technology ====================-->
+    <section class="services section" id="services">
+        <h2 class="section__title">Technology</h2>
+        <span class="section__subtitle">What Technology I Use</span>
+
+        <div class="services__container container grid">
+            <div class="services__content">
+                <div>
+                    <i class="uil uil-database services__icon"></i>
+                    <h3 class="services__title">Database</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link services__button">
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title">Databases</h4>
+                        <i class="uil uil-times services__modal-close"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="uil uil-database services__modal-icon"></i>
+                                <p>Mysql Database</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-database services__modal-icon"></i>
+                                <p>Postgresql Database</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-database services__modal-icon"></i>
+                                <p>MongoDB Database</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services__content">
+                <div>
+                    <i class="uil uil-files-landscapes services__icon"></i>
+                    <h3 class="services__title">Framework</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link services__button">
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title">Framework</h4>
+                        <i class="uil uil-times services__modal-close"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="uil uil-java-script services__modal-icon"></i>
+                                <p>Vue Js</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-java-script services__modal-icon"></i>
+                                <p>Hapi Js</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-java-script services__modal-icon"></i>
+                                <p>React Js</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-react services__modal-icon"></i>
+                                <p>Flutter</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services__content">
+                <div>
+                    <i class="uil uil uil-docker services__icon"></i>
+                    <h3 class="services__title">Tools</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link services__button">
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title">Tools</h4>
+                        <i class="uil uil-times services__modal-close"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>Docker</p>
+                            </li>
+
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>Jenkins</p>
                             </li>
                         </ul>
                     </div>
